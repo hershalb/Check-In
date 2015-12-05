@@ -1,0 +1,60 @@
+.background {
+
+	background-image: url(http://customtricks.com/wp-content/uploads/2014/11/iphone-and-mac-air-book-high-definition-wallpaper.jpg);
+}
+body{
+    padding:50px 0px 0px 0px;
+    z-index:0;
+}
+
+.layer {
+    background-color: rgba(153, 102, 51, 0.3);
+    position: absolute;
+    top: 100;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#intro {
+    text-align: center;
+}
+#intro input {
+    width: 50%;
+    display: none;
+    background-color: rgba(255, 153, 0, 0.3)
+}
+#intro #showButton {
+    display: inline;
+}
+#intro #afterbutton {
+    display: none;
+
+}
+
+.navbar-inverse {
+     background: rgba(172, 115, 57, 0.3);
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+    color: #fff;
+    background: rgb(192, 128, 63);
+}
+
+.navbar-inverse .navbar-nav > .open > a,
+ .navbar-inverse .navbar-nav > .open > a:hover,
+ .navbar-inverse .navbar-nav > .open > a:focus {
+    color: #fff;
+    background: rgb(192, 128, 63);
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu> li> a,
+.navbar-inverse .navbar-nav .open .dropdown-menu {
+    background-color: rgba(172, 115, 57, 0.3);
+    color:#eeeeee;
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu> li> a:hover {
+    color:#000000;
+}

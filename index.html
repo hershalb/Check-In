@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head 
+         content must come *after* these tags -->
+    <title>Check In</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap-social.css" rel="stylesheet">
+
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="background">
+    <div class="layer">
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
+                    <li><a href="#"><span class= "glyphicon glyphicon-info-sign" aria-hidden="true"></span> About</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                         role="button" aria-haspopup="true" aria-expanded="true"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                         Menu <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Appetizers</a></li>
+                            <li><a href="#">Main Courses</a></li>
+                            <li><a href="#">Desserts</a></li>
+                            <li><a href="#">Drinks</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Specials</li>
+                            <li><a href="#">Lunch Buffet</a></li>
+                            <li><a href="#">Weekend Brunch</a></li>
+                        </ul>
+                     </li>
+                    <li><a href="#"><i class= "fa fa-envelope-o"></i> Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a data-toggle="modal" data-target="#loginModal">
+                    <span class="glyphicon glyphicon-log-in"></span> Login</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+        <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Login </h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-inline" role="email">
+                    <div class="form-group">
+                        <label for="email" class="sr-only">Email Address</label>
+                        <input type="email" class="form-control input-sm" placeholder="Email" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="password">Password</label>
+                        <input type="password" class="form-control input-sm" placeholder="Password" id="password">
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                        <input type="checkbox"> Remember Me
+                    </label>
+                </div>
+                        <button type="button" class="btn-info btn btn-sm">Sign In</button>
+                        <button type="button" class="btn btn-default btn-sm"
+                       data-dismiss="modal">Cancel</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="container" id="intro">
+        <h1 style="font-size:75px; padding-top:50px; color:#663300;"><strong>WELCOME TO CHECKIN</strong></h1>
+        <hr width="25%"> 
+        <p style="font-size: 25px; color:#663300;">Check-in allows users to create personal incubators that let groups of similarly-driven people keep track of each others' progress and hold each other accountable for progress goals.</p>
+        <button id="showButton" type="button" onClick="show()" name="showButton" value="show" class="btn btn-lg btn-warning">Sign up!</button>
+        <form role="email">
+            <div class="col-xs-offset-4">
+            <div class="form-group">
+                <label for="firstname" class="sr-only">First Name</label>
+                <input type="text" class="form-control input-lg" placeholder="First Name" id="firstname">
+            </div>
+            <div class="form-group">
+                <label for="lastname" class="sr-only">Last Name</label>
+                <input type="text" class="form-control input-lg" placeholder="Last Name" id="lastname">
+            </div>
+            <div class="form-group">
+                <label for="email" class="sr-only">Email Address</label>
+                <input type="email" class="form-control input-lg" placeholder="Email" id="emailaddr">
+            </div>
+            <div class="form-group">
+                <label class="sr-only" for="password">Password</label>
+                <input type="password" class="form-control input-lg" placeholder="Password" id="passwordfor">
+            </div></div>
+            <div id="afterbutton">
+                <button type="button" class="btn-info btn btn-lg">Sign In</button>
+                <button type="button" class="btn btn-default btn-lg"
+               data-dismiss="modal" onClick="hide()" name="hideButton">Cancel</button></div>
+        </form>
+        
+        
+    </div>
+
+    <footer class="row-footer">
+        
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+function show()
+{
+document.getElementById('showButton').style.display="none" ;
+document.getElementById('firstname').style.display="block" ;
+document.getElementById('lastname').style.display="block" ;
+document.getElementById('emailaddr').style.display="block" ;
+document.getElementById('passwordfor').style.display="block" ;
+document.getElementById('afterbutton').style.display="block" ;
+}
+
+function hide()
+{
+
+document.getElementById('firstname').style.display="none" ;
+document.getElementById('lastname').style.display="none" ;
+document.getElementById('emailaddr').style.display="none" ;
+document.getElementById('passwordfor').style.display="none" ;
+document.getElementById('afterbutton').style.display="none" ;
+document.getElementById('showButton').style.display="inline" ;
+}
+</script>
+</div>
+</body>
+
+</html>
